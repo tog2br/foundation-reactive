@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb
+    username: sa
+    password: 
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    com.foundation.netty: DEBUG
+    org.springframework.web: DEBUG
